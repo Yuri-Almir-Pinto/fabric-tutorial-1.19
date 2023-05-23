@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "modtutorial",
+  "version": "${version}",
+
+  "name": "Mod Tutorial",
+  "description": "This is just a mod that is being used to learn how to creat fabric mods.",
+  "authors": [
+    "Yipeekiyaay"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.yipeekiyaay.modtutorial.ModTutorial"
+    ],
+    "client": [
+      "net.yipeekiyaay.modtutorial.ModTutorialClient"
+    ]
+  },
+  "mixins": [
+    "modtutorial.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
